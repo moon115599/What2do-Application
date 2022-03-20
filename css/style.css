@@ -1,3 +1,77 @@
-.hidden{
-    display: none
+body {
+  height: 760px;
+  width: 1500px;
+  color: black;
+  font-weight: 800;
+  position: relative;
+}
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 760px;
+  width: 1500px;
+  z-index: -1;
+  opacity: 0.5;
+}
+#weather {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 20px 20px;
+}
+
+#clock {
+  font-size: 68px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+#login-form,
+#greeting {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#todo-form {
+  display: flex;
+  justify-content: center;
+}
+#todo-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#todo-form input {
+  width: 190px;
+}
+#login-form input {
+  width: 120px;
+}
+#login-form input,
+#todo-form input {
+  outline: none;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.45);
+}
+
+#login-form input::placeholder,
+#todo-form input::placeholder {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#quote {
+  text-align: center;
+  position: absolute;
+  width: 1500px;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
 }

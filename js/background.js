@@ -1,9 +1,11 @@
-const images = ["0.jpeg", "1.jpeg", "2.jpeg"]
+const imgDiv = document.querySelector("#img");
 
-const chosenImage= images[Math.floor(Math.random() * images.length)]
+const images = ["0.jpeg", "1.jpeg", "2.jpeg"];
+
+const chosenImage = images[Math.floor(Math.random() * images.length)];
 
 const bgImage = document.createElement("img");
 
-bgImage.src  = "img/"+chosenImage
-
-document.body.appendChild(bgImage);
+bgImage.src = "img/" + chosenImage;
+bgImage.classList.add("bgImage");
+imgDiv.appendChild(bgImage);
